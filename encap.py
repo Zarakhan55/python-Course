@@ -13,9 +13,17 @@ student1.show_marks()
 
 # --------------------------
 
-class Student:
-    def __init__(self,name,mark):
-        self. __mark=mark
+class Bank:
+
+    def __init__(self, name, account):
+        self.name = name
+        self.__account = account
+
     def show(self):
-        print("mark..")
-        
+        print("Name:", self.name)
+        print("Account number:", self.__account)
+
+
+p1 = Bank("Zara", 69888888888888888)
+
+p1.show()
